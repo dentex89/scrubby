@@ -336,7 +336,7 @@
 							<strong>Ubicación</strong>
 							<p>Veracruz 601-A, Colonia Independencia<br>Monterrey, N.L. 64720</p>
 							<strong>Contácto</strong>
-							<p>(81)8343-8970<br>ventas@dentex.com.mx</p>
+							<p>(81) 8343-8970<br>ventas@dentex.com.mx</p>
 							<ul class="social pt-3">
 								<li><a href=""><i class="fab fa-facebook-square"></i></a></li>
 								<li><a href=""><i class="fab fa-instagram"></i></a></li>
@@ -347,9 +347,9 @@
 						<div class="col-md-7 px-0 pl-md-3">
 							<h3>Contáctanos</h3>
 
-							<form action="contact/gmail-contact.php" method="POST" id="contact-form">
+							<form name="contact" method="POST" action="/sucess.html" id="contact-form" data-netlify="true">
 
-								<div class="messages"></div>
+								<!-- <div class="messages"></div> -->
 								<div class="controls">
 
 									<div class="form-group">
@@ -363,6 +363,8 @@
 									<div class="form-group">
 										<textarea name="message" id="form_message" rows="4" class="form-control" required="required" placeholder="Tu Mensaje."></textarea>
 									</div>
+
+									<div data-netlify-recaptcha="true"></div>
 
 									<input type="submit" class="btn btn-outline-light btn-sm" value="Enviar">
 
